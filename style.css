@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #f7f8fc, #e3f2fd);
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 20px;
+}
+
+a:hover {
+    color: #1abc9c;
+}
+
+.top-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-link:hover {
+    background-color: #1abc9c;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #2980b9;
+    color: white;
+}
+
+th, td {
+    padding: 14px 20px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #eaf4ff;
+}
+
+td a {
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+td a:first-child {
+    background-color: #27ae60;
+    color: white;
+    margin-right: 5px;
+}
+
+td a:last-child {
+    background-color: #e74c3c;
+    color: white;
+}
+
+td a:first-child:hover {
+    background-color: #1e8449;
+}
+
+td a:last-child:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background: white;
+        padding: 10px;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 20px;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}
